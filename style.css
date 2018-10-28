@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1{
+	margin : 60px auto;
+}
+h2{
+	margin : 40px auto;
+}
+
+h3{
+	margin : 20px auto;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* GENERAL */
+*{
+  margin:0px;
+  padding: 0px;
+}
+
+body{
+
+  font-size:1.3em;
+  text-align: justify;
+  background-image: url('hikaru_bg.jpg');
+  word-wrap: wrap;
+}
+.container{
+width:960px;
+opacity:0.9;
+margin: 0 auto;
+background-color: #f2b06d;
+font-size: 1.3em;
+text-shadow: 2px 2px 4px white;
+
+}
+/* HEADER */
+
+header{
+  margin:0px;
+  padding: 0px;
+  display:flex;
+  background-color: rgb(15,15,15);
+
+}
+
+.logo{
+  margin-left: 3%;
+}
+.logo:hover{
+  opacity:0.5;}
+
+h1{
+  margin : auto;
+  color:rgb(240,240,240);
+  text-shadow: 3px 3px 6px black;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+/* NAV */
+nav{
+  margin :25px 25px;
+  display:flex;
+  justify-content : space-between;
+}
+
+
+
+/* MAIN */
+.gogame{
+  margin-left : 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+main{
+  margin : auto;
+  min-height: 600px;
+}
+.article{
+  margin : 50px 50px;
+}
+
+.black, h3:hover, h2:hover{
+  color:black;
+  text-shadow: 3px 3px 6px white;
+}
+h2, p:hover, .black:hover, h3{
+  color:rgb(240,240,240);
+  text-shadow: 2px 2px 4px black;
+}
+
+h2{
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.image{
+  margin: auto 160px;
+}
+
+/* FOOTER */
+footer{
+background-color: rgb(0,0,0);
+display:flex;
+bottom: 0px;
+left:0px;
+
+}
+
+.coordonnees{
+color:rgb(240,240,240);
+margin-left: 25px;
+}
+
+.reseauxSociaux{
+  margin-left:540px;
+}
+
+.rs{
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer a{
+  color:white;
+}
+
+/* PAGE LIENS */
+.desti{
+  display:flex;
+}
+.legal{
+  color:white;
+background-color: rgb(0,0,0);
+}
+
+.liens
+{
+margin: 25px 25px;
+
+}
+.titre
+{
+  margin: auto;
+}
+a:hover{
+  color:white;
+  text-shadow: 2px 2px 4px black;
+}
+a{
+  color:black;
+}
+
+.bouton{
+/*  max-height: 60px;*/
+  padding:  20px 50px;
+  background-color: black;
+  color:white;
+  border: 5px black solid;
+  max-height : 100px;
+  max-width: 200px;
+  text-align: center;
+  border-radius : 10px;
+  background-image: url('goban.jpg');
+  box-shadow:  6px 6px 0px white;
+}
+.bouton a{
+  color:white;
+  font-size: 1.3em;
+    text-decoration: none;
+}
+
+
+/*
+#desti{
+  display:flex;
+}
+
+#kuro {
+
+    position: fixed;
+    left: 10px;
+    top:10px;
+}
+
+#shiro {
+
+    position: fixed;
+    left: 50px;
+    top:100px;
+}
+th,td{
+  border:black solid 1px;
+}
+table{
+  border-collapse: collapse;
+}
+
+li{
+  list-style-type: none;
+
+}
+*/
+@media screen and (max-width: 965px){
+	.container{
+width:350px;
+margin: 0 auto;
+font-size: 1em;
+}
+
+	.article{
+	  margin : 20px 20px;
+	}
+	.image{
+	  margin: auto 75px;
+	}
+
+
+	.reseauxSociaux{
+	  margin-left:115px;
+	}
+
+	.rs{
+	  margin-right: 10px;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	}
+}
